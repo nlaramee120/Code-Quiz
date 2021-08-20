@@ -1,0 +1,36 @@
+* {
+    font-family: Helvetica;
+}
+
+header {
+    background-color: #E1DBD9;
+    padding: 8px;
+    width: 100%;
+}
+
+header span {
+    margin-left: 1300px
+}
+
+h1 {
+    display: inline-block
+}
+
+
+
+body {
+    text-align: center;
+}
+
+section {
+    display: block;
+    margin-top: 260px;
+}
+
+#timeRemaining {
+    text-align: right;
+}
+
+.timeLeft {
+    display: inline-block;
+}
