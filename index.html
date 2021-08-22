@@ -12,19 +12,34 @@
 <body>
     <header>
        <a href= "#"><h1>View Highscores</h1></a>
-            <h1 id= "timeRemaining" class="timeLeft"></h1>
+            <h1 id="timeLeft">Time Left: 60</h1>
     </header>
 
 <section>
     <h2>Code Quiz</h2>
         <p>Welcome to the Coding Quiz. You will have 60 seconds to complete the quiz.</p>
 
-    <button class="startBtn">
+    <button id="startBtn">
         Start Quiz
     </button>
-</section>
 
- <script src="script.js"></script>
+
+    <div class="container">
+        <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+       </div> 
+       <div class="controls"></div>
+    </div>
+</section>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+
 
 </body>
 </html>
