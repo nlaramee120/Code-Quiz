@@ -1,7 +1,7 @@
 var startBtn = document.getElementById("startBtn");
 var timeLeft = document.getElementById("timeLeft");
 var questionDiv = document.getElementById("question-div");
-
+var questionContainerElement = document.getElementById("question-container");
 
 
 function countdown() {
@@ -24,6 +24,43 @@ function countdown() {
         }
     }, 1000);
 }
+
+function startGame() {
+    console.log('Started')
+    startBtn.classList.add('hide')
+    questionContainerElement.classList.remove('hide')
+}
+
+function selectAnswer() {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let questions = [
 //     {
@@ -54,6 +91,8 @@ function countdown() {
 console.log(countdown)
 
 startBtn.addEventListener("click", countdown);
+
+startBtn.addEventListener("click", startGame)
 
 
 

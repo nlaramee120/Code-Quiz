@@ -27,10 +27,11 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;    justify-content: center;
+    background-color: lightseagreen
 }
 
 section {
-    display: flex;
+    display: grid;
     margin-top: 260px;
     justify-content: center;
     align-items: center;
@@ -39,10 +40,36 @@ section {
 .container {
     max-width: 80%;
     align-items: center;
-    background-color: red;
-    border-radius: 5px
-
+    border-radius: 5px;
+    width: 400px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
 }
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin: 20px
+}
+
+.btn {
+    border: 3px solid blue;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    border-color: black;
+    opacity: 70%;
+}
+
+.hide {
+    display: none
+}
+
 
 #timeLeft {
     float: left 50px;
