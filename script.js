@@ -2,6 +2,10 @@ var startBtn = document.getElementById("startBtn");
 var timeLeft = document.getElementById("timeLeft");
 var questionDiv = document.getElementById("question-div");
 var questionContainerElement = document.getElementById("question-container");
+var answer1 = document.getElementById("answer1");
+var answer2 = document.getElementById("answer2");
+var answer3 = document.getElementById("answer3");
+var answer4 = document.getElementById("answer4");
 
 
 function countdown() {
@@ -29,13 +33,35 @@ function startGame() {
     console.log('Started')
     startBtn.classList.add('hide')
     questionContainerElement.classList.remove('hide')
+    selectNextQuestion()
 }
 
-function selectAnswer() {
+function selectNextQuestion() {
 
 
 }
 
+
+var questions = [
+    {
+        question: 'Commonly used data types do NOT include which of the following?',
+        answers: [
+            { text: 'alerts', correct: true },
+            { text: 'numbers', correct: false},
+            { text: 'booleans', correct: false},
+            { text: 'strings', correct: false},
+        ]
+    },
+    {
+        question: 'Arrays in Javascript can be used to store what?',
+        answers: [
+            { text: 'other arrays', correct: true },
+            { text: 'numbers and strings', correct: false},
+            { text: 'booleans', correct: false},
+            { text: 'all of them', correct: false}, 
+        ]
+    }
+]
 
 
 
@@ -96,3 +122,32 @@ startBtn.addEventListener("click", startGame)
 
 
 
+// Commonly used data types do NOT include which of the following?
+// strings
+// booleans
+// alerts
+// numbers 
+
+// Arrays in Javascript can be used to store 
+// other arrays
+// numbers and strings 
+// booleans
+// all of the above 
+
+// The condition in a if/else statement is enclosed within
+// quotes
+// curly brackets
+// parentheses
+// square brackets
+
+// String values must be enclosed within _______ when being assigned to variables.
+// commas
+// curly brackets
+// quotes
+// parentheses
+
+// A very useful tool used during development and debugging for printing content to the debugger is:
+// Javascript
+// terminal/bash
+// for loops
+// console log
